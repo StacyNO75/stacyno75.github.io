@@ -1,2 +1,2 @@
-# stacyno75-github-io
+# stacyno75.github.io
 My first website
