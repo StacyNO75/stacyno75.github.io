@@ -5,13 +5,13 @@
     let collectable = window.opspark.collectable;
 
     let type = {
-        db: {assetKey: 'db', points: 10},
-        max: {assetKey: 'max', points: 20},
-        steve: {assetKey: 'steve', points: 30},
-        grace: {assetKey: 'grace', points: 40},
-        kennedi: {assetKey: 'kennedi', points: 50}
+        db: { assetKey: 'db', points: 10 },
+        max: { assetKey: 'max', points: 20 },
+        steve: { assetKey: 'steve', points: 30 },
+        grace: { assetKey: 'grace', points: 40 },
+        kennedi: { assetKey: 'kennedi', points: 50 }
     };
-    
+
     /**
      * init: Initialize all collectables.
      * 
@@ -29,18 +29,22 @@
      *      y: The y coordineate for the collectable.
      *      gravity: OPTIONAL The gravitational pull on the collectable.
      *      bounce: OPTIONAL A factor effecting how much the collectable will bounce off platforms, etc.
-     */ 
+     */
     function init(game) {
         let createCollectable = collectable.create;
 
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
-        
-        // example: 
-        createCollectable(type.steve, 200, 170, 6, 0.7);
-        
-        
-        
+
+        //collectible grace
+        createCollectable(type.grace, 200, 170, 5, 0.8);
+        //collectible kennedi
+        createCollectable(type.kennedi, 575, 225, 5, 0.8);
+        //collectible max
+        createCollectable(type.max, 525, 425, 7, .9);
+        //collectible steve
+        createCollectable(type.steve, 100, 500, 2, 10);
+
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
     };
